@@ -1,4 +1,6 @@
-<h1 class="blog-title">Create Spring Boot CRUD Example with JPA mysql Thymeleaf</h1>
+<h1 class="blog-title">SpringBoot CRUD API with JPA and Thymeleaf</h1>
+<p>in this blog we create spring boot crud operation using <b class="MySpecialWord"> @controller annotation </b> and <b class="MySpecialWord">Thymeleaf Template engine.</b> 
+Thymeleaf can work both in web and non-web environments <a href="http://www.thymeleaf.org/" target="_blank">for More Detail</a></p>
 <table class="table table-hover">
 	<tr>
 		<th>HTTP Method</th>
@@ -33,7 +35,7 @@
 </table>
 <img src="${pageContext.request.contextPath}/static/img/blog/spring-boot-crud-example-with-jpa-mysql-thymeleaf.jpg">
 <p><b>POM.XML</b></p>
-<pre>
+<pre class="MyCodeBlock">
 	<code>
 	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -107,7 +109,7 @@
 	</code>
 </pre>
 <p><b>Customer.java</b></p>
-<pre>
+<pre class="MyCodeBlock">
 	<code>
 package com.code4devops.entity;
 import javax.persistence.Column;
@@ -208,13 +210,13 @@ public class Customer {
 	</code>
 </pre>
 <p><b>application.properties</b></p>
-<pre>
+<pre class="MyCodeBlock">
 spring.datasource.url=jdbc:mysql://localhost:3306/spring_boot _build_a_rest_api_with_hibernate?useSSL=false&serverTimezone=UTC
 spring.datasource.username=root
 spring.datasource.password=root
 </pre>
 <p><b>CustomerDataAccessObject.java</b></p>
-<pre>
+<pre class="MyCodeBlock">
 package com.code4devops.dao;
 import java.util.List;
 import com.code4devops.entity.Customer;
@@ -227,7 +229,7 @@ public interface CustomerDataAccessObject {
 }
 </pre>
 <p><b>CustomerDataAccessObjectImplementation.java</b></p>
-<pre>
+<pre class="MyCodeBlock">
 	<code>
 package com.code4devops.dao;
 import java.util.List;
@@ -301,7 +303,7 @@ public class CustomerDataAccessObjectImplementation implements CustomerDataAcces
 	</code>
 </pre>
 <p><b>CustomerService.java</b></p>
-<pre>
+<pre class="MyCodeBlock">
 <code>
 	package com.code4devops.service;
 	import java.util.List;
@@ -317,7 +319,7 @@ public class CustomerDataAccessObjectImplementation implements CustomerDataAcces
 </code>
 </pre>
 <p><b>CustomerServiceImplementation.java</b></p>
-<pre>
+<pre class="MyCodeBlock">
 	<code>
 package com.code4devops.service;
 import java.util.List;
@@ -364,11 +366,11 @@ public class CustomerServiceImplementation implements CustomerService{
 	</code>
 </pre>
 <p><b>index.html</b></p>
-<pre>
+<pre class="MyCodeBlock">
 &lt;meta http-equiv="refresh" content="0;URL='customer/all-customer-list'"&gt;
 </pre>
 <p><b>customer-from.html</b></p>
-<pre>
+<pre class="MyCodeBlock">
 &lt;!DOCTYPE html&gt;
 &lt;html xmlns:th="http://www.thymeleaf.org" &gt;
 &lt;head&gt;
@@ -438,7 +440,7 @@ public class CustomerServiceImplementation implements CustomerService{
 &lt;/html&gt;
 </pre>
 <p><b>customer-list.html</b></p>
-<pre>
+<pre class="MyCodeBlock">
 &lt;!DOCTYPE html&gt;
 &lt;html xmlns:th="http://www.thymeleaf.org" &gt;
 &lt;head&gt;
@@ -477,14 +479,14 @@ public class CustomerServiceImplementation implements CustomerService{
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tr th:each="tempCustomer : ${customerlist}"&gt;
-	&lt;td th:text="${tempCustomer.customer_id}"/&gt;
-	&lt;td th:text="${tempCustomer.customer_fname}"/&gt;
-	&lt;td th:text="${tempCustomer.customer_lname}"/&gt;
-	&lt;td th:text="${tempCustomer.customer_mobile}"/&gt;
-	&lt;td th:text="${tempCustomer.customer_email}"/&gt;
-	&lt;td th:text="${tempCustomer.customer_join_date}"/&gt;
-	&lt;td&gt;&lt;a th:href="@{/customer/single-customer-view(customer_id=${tempCustomer.customer_id})}" class="btn btn-primary btn-sm mb-3"&gt;Update&lt;/a&gt;&lt;/td&gt;
-	&lt;td&gt;&lt;a th:href="@{/customer/delete(customer_id=${tempCustomer.customer_id})}" class="btn btn-danger btn-sm mb-3"
+&lt;td th:text="${tempCustomer.customer_id}"/&gt;
+&lt;td th:text="${tempCustomer.customer_fname}"/&gt;
+&lt;td th:text="${tempCustomer.customer_lname}"/&gt;
+&lt;td th:text="${tempCustomer.customer_mobile}"/&gt;
+&lt;td th:text="${tempCustomer.customer_email}"/&gt;
+&lt;td th:text="${tempCustomer.customer_join_date}"/&gt;
+&lt;td&gt;&lt;a th:href="@{/customer/single-customer-view(customer_id=${tempCustomer.customer_id})}" class="btn btn-primary btn-sm mb-3"&gt;Update&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a th:href="@{/customer/delete(customer_id=${tempCustomer.customer_id})}" class="btn btn-danger btn-sm mb-3"
 		   onclick="if(!(confirm('Are you sure you want to delete this custome'))) return false"&gt;Delete&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;	
 &lt;/table&gt;
@@ -494,8 +496,8 @@ public class CustomerServiceImplementation implements CustomerService{
 &lt;/html&gt;
 </pre>
 <p><b>ControllerForCustomer.java</b></p>
-<pre>
-<code>
+<pre class="MyCodeBlock">
+<code >
 package com.code4devops;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -513,50 +515,49 @@ import com.code4devops.service.CustomerService;
 @RequestMapping("customer")
 public class ControllerForCustomer {
 	
-		@Autowired
-		private CustomerService customerService;
+@Autowired
+private CustomerService customerService;
 		
 		
-		@GetMapping("/all-customer-list")
-		public String getAllCustomerList(Model model) {
-			 List&lt;Customer&gt; list = customerService.findAll();
-			 model.addAttribute("customerlist",list);
-		return "customer-list";
-		}
+@GetMapping("/all-customer-list")
+public String getAllCustomerList(Model model) {
+	 List&lt;Customer&gt; list = customerService.findAll();
+	 model.addAttribute("customerlist",list);
+return "customer-list";
+}
 				
-		@GetMapping("/customer-from")
-		public String getCustomerFrom(Model model) {
-			Customer customer=new Customer();
-			model.addAttribute("customer",customer);
-		return "customer-from";
-		}
+@GetMapping("/customer-from")
+public String getCustomerFrom(Model model) {
+	Customer customer=new Customer();
+	model.addAttribute("customer",customer);
+return "customer-from";
+}
 		
-		@PostMapping("/customersave")
-		public  String getCustomerSave(@ModelAttribute("customer") Customer theCustomer) {
-				System.out.println(theCustomer);
-				customerService.save(theCustomer);
-		return "redirect:all-customer-list";
-		}
+@PostMapping("/customersave")
+public  String getCustomerSave(@ModelAttribute("customer") Customer theCustomer) {
+	System.out.println(theCustomer);
+	customerService.save(theCustomer);
+return "redirect:all-customer-list";
+}
 				
-		@GetMapping("/single-customer-view")
-		public String getSingleCustomerView(@RequestParam("customer_id") int customer_id, Model model) {
-				Customer customer= customerService.findById(customer_id);
-				model.addAttribute("customer", customer);
-		return "customer-from";
-		}
+@GetMapping("/single-customer-view")
+public String getSingleCustomerView(@RequestParam("customer_id") int customer_id, Model model) {
+	Customer customer= customerService.findById(customer_id);
+	model.addAttribute("customer", customer);
+return "customer-from";
+}
 			
-		@GetMapping("/delete")
-		public String getEmployee(@RequestParam("customer_id") int customer_id) {
-				customerService.deleteById(customer_id);
-		return "redirect:all-customer-list";
-		}
-		
-		
+@GetMapping("/delete")
+public String getEmployee(@RequestParam("customer_id") int customer_id) {
+	customerService.deleteById(customer_id);
+	return "redirect:all-customer-list";
+}
+	
 }
 </code>
 </pre>
 <p><b>SpringBootSecurityWithThymleafANDHibernate.java</b></p>
-<pre>
+<pre class="MyCodeBlock">
 package com.code4devops;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

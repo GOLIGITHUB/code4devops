@@ -11,7 +11,7 @@
 <p>[root@localhost ~]$ mysql_secure_installation</p>
 <p>[root@localhost ~]$ mysql -p</p>
 <p><b>DBConnectionProvider.py</b></p>
-<pre>
+<pre class="MyCodeBlock">
 from mysql import connector
 class ConnectionProvider:
 
@@ -22,7 +22,7 @@ class ConnectionProvider:
 #print(ConnectionProvider.myConnectionProvider())
 </pre>
 <p><b>DBEmployee.py</b></p>
-<pre>
+<pre class="MyCodeBlock">
 class Employee:
 
 	def __init__(self,id,name,email,mobile):
@@ -37,7 +37,7 @@ class Employee:
 
 </pre>
 <p><b>DBEmployeeService.py</b></p>
-<pre>
+<pre class="MyCodeBlock">
 from abc import ABC,abstractmethod
 class EmployeeService(ABC):
 
@@ -63,7 +63,7 @@ class EmployeeService(ABC):
 		pass
 </pre>
 <p><b>DBEmployeeServiceImpl.py</b></p>
-<pre>
+<pre class="MyCodeBlock">
 from DBConnectionProvider import ConnectionProvider;
 from DBEmployeeService import EmployeeService
 class EmployeeServiceImpl(EmployeeService):
@@ -124,7 +124,7 @@ class EmployeeServiceImpl(EmployeeService):
 			print(mycursor.rowcount, "record update.")			
 </pre>
 <p><b>DBApp.py</b></p>
-<pre>
+<pre class="MyCodeBlock">
 from DBEmployeeServiceImpl import EmployeeServiceImpl
 from DBEmployee import Employee
 
