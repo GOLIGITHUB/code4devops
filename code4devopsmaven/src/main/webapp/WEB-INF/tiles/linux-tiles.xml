@@ -1,0 +1,41 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+       
+<tiles-definitions>
+
+     <definition name="baseLayoutManagerLinux"  template="/WEB-INF/frame/layoutManagerLinux.jsp">  
+        <put-attribute name="title"   value="" />  
+        <put-attribute name="navbar"  value="/WEB-INF/grids/navbar.jsp"/>  
+        <put-attribute name="menu" value="/WEB-INF/menus/menulinux.jsp"/>  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer"  value="/WEB-INF/grids/footer.jsp"/>  
+    </definition>  
+   
+    <definition name="linux-home-page" extends="baseLayoutManagerLinux">  
+        <put-attribute name="title" value="Linux Home"/>  
+        <put-attribute name="body"  value="/WEB-INF/linux/linux-home-page.jsp"/>  
+    </definition>  
+    
+    <definition name="linux-commands-basic-commands" extends="baseLayoutManagerLinux">  
+        <put-attribute name="title" value="Linux commands Basic Commands"/>  
+        <put-attribute name="body"  value="/WEB-INF/linux/linux-commands-basic-commands.jsp"/>  
+    </definition> 
+        
+    <definition name="linux-user-and-group-commands" extends="baseLayoutManagerLinux">  
+        <put-attribute name="title" value="linux user and group commands"/>  
+        <put-attribute name="body"  value="/WEB-INF/linux/linux-user-and-group-commands.jsp"/>  
+    </definition>
+    
+    <definition name="linux-commands-process-commands" extends="baseLayoutManagerLinux">  
+        <put-attribute name="title" value="Linux commands process commands"/>  
+        <put-attribute name="body"  value="/WEB-INF/linux/linux-commands-process-commands.jsp"/>  
+    </definition>
+    
+    <definition name="404" extends="baseLayoutManagerLinux">  
+        <put-attribute name="title" value="Page Not Found - 404"/>  
+        <put-attribute name="body"  value="/WEB-INF/linux/404.jsp"/>  
+    </definition>
+    
+</tiles-definitions>
+

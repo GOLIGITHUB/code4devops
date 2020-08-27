@@ -1,0 +1,43 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+       
+<tiles-definitions>
+
+     <definition name="baselayoutManagerBlog"  template="/WEB-INF/frame/layoutManagerBlog.jsp">  
+        <put-attribute name="title"   value="" />  
+        <put-attribute name="navbar"  value="/WEB-INF/grids/navbar.jsp"/>  
+        <put-attribute name="menu" value="/WEB-INF/menus/menublog.jsp"/>  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer"  value="/WEB-INF/grids/footer.jsp"/>  
+    </definition>  
+   
+    <definition name="blog-home-page" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Blog Home"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/blog.jsp"/>  
+    </definition>  
+    
+    <definition name="spring-mvc-using-fully-java-based-configuration" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Spring MVC"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/spring-mvc-using-fully-java-based-configuration.jsp"/>  
+    </definition> 
+    <definition name="spring-mvc-using-fully-XML-based-configuration" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Spring MVC"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/spring-mvc-using-fully-XML-based-configuration.jsp"/>  
+    </definition> 
+    <definition name="spring-boot-rest-api-with-hibernate-example" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Spring Boot"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/spring-boot-rest-api-with-hibernate-example.jsp"/>  
+    </definition>
+     <definition name="spring-boot-crud-example-with-jpa-mysql-thymeleaf" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Spring Boot"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/spring-boot-crud-example-with-jpa-mysql-thymeleaf.jsp"/>  
+    </definition>
+    <definition name="python-crud-operation-mariadb-in-linux" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Python CRUD with Linux"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/python-crud-operation-mariadb-in-linux.jsp"/>  
+    </definition>
+ 
+    
+</tiles-definitions>
+

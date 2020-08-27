@@ -1,0 +1,200 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+       
+<tiles-definitions>
+
+    <definition name="baseLayoutManagerPython"  template="/WEB-INF/frame/layoutManagerPython.jsp">  
+        <put-attribute name="title"   value="" />  
+        <put-attribute name="navbar"  value="/WEB-INF/grids/navbar.jsp"/>  
+        <put-attribute name="menu"    value="/WEB-INF/menus/menupython.jsp"/>  
+        <put-attribute name="body"    value="" />  
+        <put-attribute name="footer"  value="/WEB-INF/grids/footer.jsp"/>  
+    </definition>  
+    
+    <definition name="python-home-page" extends="baseLayoutManagerPython">  
+        <put-attribute name="title" value="Welcome to Python" />  
+        <put-attribute name="body"  value="/WEB-INF/python/python-Home-Page.jsp" />  
+    </definition>  
+    
+    <definition name="python-basic"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Basic Concept"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Basic.jsp"></put-attribute> 		
+ 	</definition>
+	
+	
+	<definition name="python-identifier"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Identifier"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-identifier.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+	<definition name="python-keyword"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Keyword"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-keyword.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+	<definition name="python-data-types"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python data type"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Data-Types.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+	<definition name="python-variable"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Variable"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Variable.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-operators"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Operators "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Operators.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-control-statements"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python control statements "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Control-Statements.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-array"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Array "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Array.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-input-output"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Input Output "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Input-Output.jsp"></put-attribute> 		
+ 	</definition>
+ 	 	
+ 	<definition name="python-list"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python List "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-List.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-set"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Set "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Set.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-tuple"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Tuple"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Tuple.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-dictionary"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Dictionary"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Dictionary.jsp"></put-attribute> 		
+ 	</definition>
+ 	 	
+ 	<definition name="python-function"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python function "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Function.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-numbers-format"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Numbers"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Numbers-format.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-class-and-object"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python class and object "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Class-and-Object.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-object-class"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python object Detail "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Object-Class.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-method"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python method "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Method.jsp"></put-attribute> 		
+ 	</definition>
+ 	<definition name="python-decorators"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Decorators"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Decorators.jsp"></put-attribute> 		
+ 	</definition>
+ 	<definition name="python-constructor"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Constructor "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Constructor.jsp"></put-attribute> 		
+ 	</definition>
+ 	<definition name="python-string"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python String "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-String.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	 	
+ 	<definition name="python-inheritance"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Inheritance "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Inheritance.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-super-keyword"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Super "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Super-Keyword.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-polymorphism"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Polymorphism"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Polymorphism.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-encapsulation"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Encapsulation"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Encapsulation.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-abstraction"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Abstraction"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Abstraction.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-packages-modules"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Packages Modules"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Packages-Modules.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-exception-handling"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Exception Handling"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Exception-Handling.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-database-connectivity"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Inheritance "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Database-Connectivity.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-regular-expressions"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Regular Expressions"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Regular-Expressions.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	
+ 	<definition name="python-file-handling"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python File Handing"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-File-Handling.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-networking"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Networking"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Networking.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-multithreading"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Multithreading"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-multithreading.jsp"></put-attribute> 		
+ 	</definition>
+ 		
+ 	<definition name="python-dates"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Dates"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Dates.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-boto3-Aws"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="Python Boto3 AWS"></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Boto3-Aws.jsp"></put-attribute> 		
+ 	</definition>
+ 	
+ 	<definition name="python-time"  extends="baseLayoutManagerPython">
+ 		<put-attribute name="title" value="python Time "></put-attribute>
+ 		<put-attribute name="body" value="/WEB-INF/python/python-Time.jsp"></put-attribute> 		
+ 	</definition>
+</tiles-definitions>
+

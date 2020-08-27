@@ -1,0 +1,31 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+       
+<tiles-definitions>
+
+    <definition name="baseLayoutManagerHome"  template="/WEB-INF/frame/layoutManagerHome.jsp">  
+        <put-attribute name="title"   value="" />  
+        <put-attribute name="navbar"  value="/WEB-INF/grids/navbar.jsp"/>  
+        <put-attribute name="" value=""/>  
+        <put-attribute name="" value="" />  
+        <put-attribute name="" value=""/>
+        <put-attribute name="footer"  value="/WEB-INF/grids/footer.jsp"/>  
+    </definition>  
+    
+    <definition name="welcome" extends="baseLayoutManagerHome">  
+        <put-attribute name="title" value="Welcome to Code4Devops"/>  
+        <put-attribute name="body"  value="/WEB-INF/home/home.jsp"/>  
+    </definition>  
+    
+    <definition name="queryFrom" extends="baseLayoutManagerHome">  
+        <put-attribute name="title" value="Query From"/>  
+        <put-attribute name="body"  value="/WEB-INF/query/queryFrom.jsp"/>  
+    </definition>
+    
+    
+    <definition name="againQueryFrom" extends="baseLayoutManagerHome">  
+        <put-attribute name="title" value="Query From"/>  
+        <put-attribute name="body"  value="/WEB-INF/query/againQueryFrom.jsp"/>  
+    </definition>   
+</tiles-definitions>

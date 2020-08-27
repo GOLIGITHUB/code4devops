@@ -1,0 +1,69 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+       
+<tiles-definitions>
+
+    <definition name="baselayoutManagerSpringBoot"  template="/WEB-INF/frame/layoutManagerSpringBoot.jsp">  
+        <put-attribute name="title"   value="" />  
+        <put-attribute name="navbar"  value="/WEB-INF/grids/navbar.jsp"/>  
+        <put-attribute name="menu"    value="/WEB-INF/menus/menuspringboot.jsp"/>  
+        <put-attribute name="body"    value="" />  
+        <put-attribute name="footer"  value="/WEB-INF/grids/footer.jsp"/>  
+    </definition>  
+    
+    <definition name="spring-boot-overview" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Overview" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-overview.jsp" />  
+    </definition>  
+    
+     <definition name="spring-Boot-Dev-Tools" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Dev Tools" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-Boot-Dev-Tools.jsp" />  
+    </definition>
+    
+    <definition name="spring-boot-actuator" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Actuator" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-actuator.jsp" />  
+    </definition>
+   
+   	<definition name="spring-boot-apps-cmd" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Command Line" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-apps-cmd.jsp" />  
+    </definition>
+    
+    <definition name="spring-boot-properties" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Application Properties" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-properties.jsp" />  
+    </definition>
+      
+   <definition name="spring-boot-project-structure" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Project Structure" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-project-structure.jsp" />  
+    </definition>
+    
+    
+     <definition name="spring-boot-security" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Security" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-security.jsp" />  
+    </definition>
+    
+    
+    <definition name="spring-boot-maven-dependencies" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Maven Dependencies" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-maven-dependencies.jsp" />  
+    </definition>
+    
+    
+    <definition name="spring-boot-with-spring-tool-suite-ide" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot With Spring Tool Suite" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-with-spring-tool-suite-ide.jsp" />  
+    </definition>
+    
+    <definition name="spring-boot-query" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring Boot Query" />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-query.jsp" />  
+    </definition>
+    
+</tiles-definitions>
+
