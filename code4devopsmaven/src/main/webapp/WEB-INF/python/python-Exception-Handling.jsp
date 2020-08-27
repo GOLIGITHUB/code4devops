@@ -19,7 +19,7 @@
 <p>if we use Exception handing mechanism.Then in program exception raised, program terminated normally 
 and rest of code executed</p>
 <p><strong>Without Exception Handing :</strong>Program terminated abnormal and rest of code not executed</h3>
-<pre>
+<pre class="MyCodeBlock">
 print("hello 1")
 print("hello 2")
 print("hello 3")
@@ -29,7 +29,7 @@ print("hello 5")
 print("hello 6")
 print("hello 7")
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 hello 1
 hello 2
 hello 3
@@ -47,7 +47,7 @@ try:
 except <strong>exception_class_name</strong> as <strong>variable_name</strong>:
 	this code executed when exception raised in try block
 </pre>
-<pre>
+<pre class="MyCodeBlock">
 print("hello 1")
 print("hello 2")
 print("hello 3")
@@ -59,7 +59,7 @@ except ZeroDivisionError as e:
 print("hello 5")
 print("hello 6")
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 hello 1
 hello 2
 hello 3
@@ -69,7 +69,7 @@ hello 5
 hello 6
 </pre>
 <h3>if except block doesn't match, program terminated abnormal</h3>
-<pre>
+<pre class="MyCodeBlock">
 print("hello 1")
 print("hello 2")
 print("hello 3")
@@ -81,7 +81,7 @@ except TypeError as e:
 print("hello 5")
 print("hello 6")
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 hello 1
 hello 2
 hello 3
@@ -102,7 +102,7 @@ else:
 </pre>
 <h3>Exception handly by try,except and else block python</h3>
 <p>else block execute when no exception raised in python<p> 
-<pre>
+<pre class="MyCodeBlock">
 print("Hello1")
 try:
     print(10/0)
@@ -114,13 +114,13 @@ else:
 	print("if try block no exception")    
 print("Rest of code")    
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 Hello1
 Exception : division by zero
 Rest of code
 </pre>
 <p><strong>else block execute when no exception raised</strong><p> 
-<pre>
+<pre class="MyCodeBlock">
 print("Hello1")
 try:
     print(10/5)
@@ -132,14 +132,14 @@ else:
 	print("if try block no exception")    
 print("Rest of code")    
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 Hello1
 2.0
 if try block no exception
 Rest of code
 </pre>
 <h3>default block except we enter string</h3>
-<pre>
+<pre class="MyCodeBlock">
 print("Hello1")
 try:
 	a=int(input("enter a number : "))
@@ -153,14 +153,14 @@ else:
 
 print("Rest of code")
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 Hello1
 enter a number : STRING
 default exception
 Rest of code
 </pre>
 <h3>CASE 1 : Single try block and multiple except block with else</h3>
-<pre>
+<pre class="MyCodeBlock">
 try:
 	#print(10/0)
 	#ZeroDivisionError : division by zero
@@ -193,12 +193,12 @@ except ValueError as e:
 else:
     print("no exception raised")        
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 5.0
 AttributeError : 'str' object has no attribute 'len'
 </pre>
 <h3>CASE 2 : Single try block and except block with else</h3>
-<pre>
+<pre class="MyCodeBlock">
 try:
 	#print(10/0)
 	#ZeroDivisionError : division by zero
@@ -223,14 +223,14 @@ except (ZeroDivisionError,AttributeError,TypeError,IndexError,ValueError) as e:
 else:
 	print("no exception raised")            
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 5.0
 4
 300
 exception : string index out of range
 </pre>
-<h3>Exception with BaseException class</h3>
-<pre>
+<h3 >Exception with BaseException class</h3>
+<pre class="MyCodeBlock">
 try:
 	#print(10/0)
 	#ZeroDivisionError : division by zero
@@ -255,7 +255,7 @@ except BaseException as e:
 else:
 	print("no exception raised")    
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 5.0
 4
 300
@@ -263,7 +263,7 @@ e
 exception : substring not found
 </pre>
 <h3>Exception with Exception class</h3>
-<pre>
+<pre class="MyCodeBlock">
 try:
 	#print(10/0)
 	#ZeroDivisionError : division by zero
@@ -288,7 +288,7 @@ except Exception as e:
 else:
 	print("There is no exception raised")    
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 5.0
 4
 300
@@ -301,7 +301,7 @@ but except block order must be child to parent</h3>
 if you enter string then ValueError exception</p>
 <p>
 </p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		num=int(input("Please Enter a number :"))
@@ -314,7 +314,7 @@ def getException():
 		print("There is no exceptio")
 getException()				
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 Please Enter a number :0
 Child Exception : division by zero
 </pre>
@@ -323,7 +323,7 @@ Please Enter a number :ashu
 Parent Exception : invalid literal for int() with base 10: 'ashu'
 </pre>
 <p><strong>Here change the exception order parent to child exception in python</strong></p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		num=int(input("Please Enter a number :"))
@@ -336,7 +336,7 @@ def getException():
 		print("There is no exceptio")
 getException()
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 Please Enter a number :0
 Parent Exception : division by zero
 </pre>
@@ -345,7 +345,7 @@ Please Enter a number :ashu
 Parent Exception : invalid literal for int() with base 10: 'ashu'
 </pre>
 <h1> nested try except block in pyhton</h1>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		num=int(input("Please Enter a number :"))
@@ -364,12 +364,12 @@ def getException():
 	print("Outer try block rest of code")	
 getException()
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 Please Enter a number :0
 Outer try block exception: division by zero
 Outer try block rest of code
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 Please Enter a number :10
 10.0
 Inner try block exception: can only concatenate str (not "int") to str
@@ -380,12 +380,12 @@ Outer try block rest of code
 <h2>CASE 1</h2>
 <h3>Exception with module in python</h3>
 <p>this source file save as <strong>module1.py</strong> that is call modules name</p>
-<pre>
+<pre class="MyCodeBlock">
 def getExcetionFuntion():
 	print("ABC"+100)
 </pre>
 <p>this source file save as <strong>module2.py</strong> that is call modules name</p>
-<pre>
+<pre class="MyCodeBlock">
 from module1 import getExcetionFuntion
 try:
 	getExcetionFuntion()
@@ -394,12 +394,12 @@ except Exception as e:
 else:
 	print("There is no error in module1 function")
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 can only concatenate str (not "int") to str
 </pre>
 <h2>CASE 2</h2>
 <p>this source file save as <strong>module1.py</strong> that is call modules name</p>
-<pre>
+<pre class="MyCodeBlock">
 def getExcetionFuntion():
 	try:
 		print("ABC"+"XYZ")
@@ -413,13 +413,13 @@ def getExcetionFuntion():
 from module1 import getExcetionFuntion
 getExcetionFuntion()
 </pre>
-<pre>
+<pre class="MyCodeBlock-output">
 ABCXYZ
 There is no error in module1 function
 </pre>
 <h1> finally with try except block in pyhton</h1>
 <h3>try except and finally block syntax</h3>
-<pre>
+<pre class="MyCodeBlock">
 try:
 	exceptional code, may be may not be
 except:
@@ -428,7 +428,7 @@ finally:
     always executed
 </pre>
 <p><strong>CASE 1:</strong> valid</p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		print("try block")
@@ -443,7 +443,7 @@ try block
 finally block
 </pre>
 <p><strong>CASE 2:</strong> normal termination</p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		print(10+"ashu")
@@ -458,7 +458,7 @@ except block
 finally block
 </pre>
 <p><strong>CASE 3:</strong> abnormal termination</p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		print(10+"ashu")
@@ -478,7 +478,7 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 </pre>
 <p><strong>CASE 4:</strong> Invalid and abnormal termination</p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		print(10+"ashu")
@@ -506,7 +506,7 @@ Traceback (most recent call last):
 NameError: name 'name' is not defined
 </pre>
 <h3>only try with finally in pyhton </h3>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		print("try block")
@@ -520,7 +520,7 @@ finally block
 </pre>
 <h3>In python finally block not executed in two case</h3>
 <p><strong>CASE 1:</strong> if exception raised outside try block</p>
-<pre>
+<pre class="MyCodeBlock">
 print("ABC"+100)
 def getException():
 	try:
@@ -530,7 +530,7 @@ def getException():
 getException()
 </pre>
 <p><strong>CASE 1:</strong> if use os module</p>
-<pre>
+<pre class="MyCodeBlock">
 import os
 def getException():
 	try:
@@ -545,7 +545,7 @@ try block
 </pre>
 <h3>python interview question</h3>
 <p><strong>CASE 1:</strong></p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		print("XYZ"+1000)
@@ -559,7 +559,7 @@ def getException():
 getException()
 </pre>
 <p><strong>CASE 2:</strong></p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		return 1000
@@ -570,7 +570,7 @@ def getException():
 print(getException())
 </pre>
 <p><strong>CASE 3:</strong></p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		return 1000
@@ -579,7 +579,7 @@ def getException():
 print(getException())
 </pre>
 <p><strong>CASE 4:</strong></p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		return 1000
@@ -588,7 +588,7 @@ def getException():
 print(getException())
 </pre>
 <p><strong>CASE 5:</strong></p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		print(10+"AS")
@@ -598,7 +598,7 @@ def getException():
 print(getException())
 </pre>
 <p><strong>CASE 6:</strong></p>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		return 1000
@@ -612,7 +612,7 @@ def getException():
 print(getException()
 </pre>
 <h2>custome exception with raise keyword in python</h2>
-<pre>
+<pre class="MyCodeBlock">
 def getException():
 	try:
 		#print("ASHU"+10)
@@ -625,13 +625,13 @@ getException()
 </pre>
 <p><strong><strong>custome exception using parent class constrouctor</strong></strong></p>
 <p>this source file save as <strong>module1.py</strong> that is call modules name</p>
-<pre>
+<pre class="MyCodeBlock">
 class ageForVoteException(Exception):
 	def __init__(self,message):
 		super().__init__(message)
 </pre>
 <p>this source file save as <strong>module2.py</strong> that is call modules name</p>
-<pre>
+<pre class="MyCodeBlock">
 from module1 import ageForVoteException
 class ForVote:
 	def __init__(self,age):
@@ -652,12 +652,12 @@ Please Enter Your Age :2
 ageForVoteException : Invalid age for vote
 </pre>
 <p><strong><strong>custome exception using instance variable</strong></strong></p>
-<pre>
+<pre class="MyCodeBlock">
 class ageForVoteError(Exception):
 	def __init__(self,message):
 		self.message=message
 </pre>
-<pre>
+<pre class="MyCodeBlock">
 from module1 import ageForVoteError
 class ForVote:
 

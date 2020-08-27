@@ -31,14 +31,19 @@ private String blog_datetime;
 @Column(name="blog_flag",length=500,nullable=false)
 private String blog_flag;
 
+
+@Column(name="blog_image",length=500,nullable=false)
+private String blog_image;
+
 public CreateBlog() {}
 
-public CreateBlog(String blog_title, String blog_url, String blog_description, String blog_datetime, String blog_flag) {
+public CreateBlog(String blog_title, String blog_url, String blog_description, String blog_datetime, String blog_flag,String blog_image) {
 	this.blog_title = blog_title;
 	this.blog_url = blog_url;
 	this.blog_description = blog_description;
 	this.blog_datetime = blog_datetime;
 	this.blog_flag = blog_flag;
+	this.blog_image=blog_image;
 }
 
 public int getCreate_blog_id() {
@@ -89,9 +94,18 @@ public void setBlog_flag(String blog_flag) {
 	this.blog_flag = blog_flag;
 }
 
+
+public String getBlog_image() {
+	return blog_image;
+}
+
+public void setBlog_image(String blog_image) {
+	this.blog_image = blog_image;
+}
+
 @Override
 public String toString() {
-	return create_blog_id + "|" + blog_title + "|" + blog_url +"|" + blog_description + "|" + blog_datetime + "|" + blog_flag;
+	return create_blog_id + "|" + blog_title + "|" + blog_url +"|" + blog_description + "|" + blog_datetime + "|" + blog_flag+"|"+blog_image;
 }
 
 

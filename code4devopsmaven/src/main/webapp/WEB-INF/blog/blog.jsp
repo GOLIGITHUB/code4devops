@@ -9,7 +9,7 @@
 <div class="well">
       <div class="media">
       	<a class="pull-left" href="#">
-    		<img class="img-circle" src="${pageContext.request.contextPath}/static/img/blog-image.png">
+    		<img class="img-circle" src="${pageContext.request.contextPath}/<c:out value="${blogObject.blog_image}"></c:out>">
   		</a>
   		<div class="media-body">
     	<h3 class="media-heading"><a href="${pageContext.request.contextPath}/<c:out value="${blogObject.blog_url}"></c:out>"><c:out value="${blogObject.blog_title}"></c:out></a></h3>
