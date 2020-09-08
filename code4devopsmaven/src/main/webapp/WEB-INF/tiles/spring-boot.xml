@@ -1,6 +1,7 @@
-<!DOCTYPE tiles-definitions PUBLIC  
-       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
-       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
        
 <tiles-definitions>
 
@@ -65,5 +66,31 @@
         <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-boot-query.jsp" />  
     </definition>
     
+  <!-- ================================Spring MVC JSTL ======================================== -->  
+        
+    <definition name="spring-mvc-form-tag" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring MVC JSTL Form Tag " />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-mvc-form-tag.jsp" />  
+    </definition>
+    <definition name="spring-mvc-input-tag" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring MVC JSTL Input Tag  " />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-mvc-form-tag.jsp" />  
+    </definition>
+    <definition name="spring-mvc-checkbox-tag" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring MVC JSTL Checkbox Tag " />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-mvc-checkboxes-tag.jsp" />  
+    </definition>
+   <definition name="spring-mvc-checkboxes-tag" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring MVC JSTL Checkboxes Tag " />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-mvc-checkboxes-tag.jsp" />  
+    </definition>
+    <definition name="spring-mvc-radiobutton-tag" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring MVC JSTL Radiobutton Tag " />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-mvc-radiobuttons-tag.jsp" />  
+    </definition>
+    <definition name="spring-mvc-radiobuttons-tag" extends="baselayoutManagerSpringBoot">  
+        <put-attribute name="title" value="Spring MVC JSTL Radiobuttons Tag " />  
+        <put-attribute name="body"  value="/WEB-INF/spring-boot/spring-mvc-radiobuttons-tag.jsp" />  
+    </definition>
 </tiles-definitions>
 
