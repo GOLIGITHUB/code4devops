@@ -54,4 +54,24 @@ public class BlogController {
 		return "python-crud-operation-mariadb-in-linux";
 	}
 	
+	@RequestMapping(value = "/hibernate-one-to-one-unidirectional-mapping-annotation-example", method = RequestMethod.GET)	
+	public String hibernateonetooneunidirectionalmappingannotationexample() {
+		return "hibernate-one-to-one-unidirectional-mapping-annotation-example";
+	}
+	
+	@RequestMapping(value = "/hibernate-one-to-one-bidirectional-mapping-annotation-example", method = RequestMethod.GET)	
+	public String hibernateonetoonebidirectionalmappingannotationexample() {
+		return "hibernate-one-to-one-bidirectional-mapping-annotation-example";
+	}
+	
+	@RequestMapping(value = "/hibernate-one-to-many-bidirectional-mapping-annotation-example", method = RequestMethod.GET)	
+	public String hibernateonetomanybidirectionalmappingannotationexample() {
+		return "hibernate-one-to-many-bidirectional-mapping-annotation-example";
+	}
+	
+	@RequestMapping(value = "/hibernate-lazy-loading-and-eager-loading-annotation-example", method = RequestMethod.GET)	
+	public String hibernatelazyloadingandeagerloadingannotationexample() {
+		return "hibernate-lazy-loading-and-eager-loading-annotation-example";
+	}
+	
 }

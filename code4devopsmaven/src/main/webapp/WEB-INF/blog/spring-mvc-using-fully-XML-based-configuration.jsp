@@ -1,7 +1,7 @@
 <h1 class="blog-title"> &#9755; Setup Your Spring MVC Using XML Based Configuration example</h1>
 <img src="${pageContext.request.contextPath}/static/img/blog/spring-mvc-using-fully-XML-based-configuration.jpg" />
 <p><b>pom.xml</b></p>
-<pre>
+<pre class="MyCodeBlock" >
 &lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"&gt;
   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
@@ -34,7 +34,7 @@
 &lt;/project&gt;
 </pre>
 <p><b>web.xml</b></p>
-<pre>
+<pre class="MyCodeBlock">
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
@@ -56,7 +56,7 @@ version="3.1"&gt;
 &lt;/web-app&gt;
 </pre>
 <p><b>dispatcher-servlet.xml</b></p>
-<pre>
+<pre class="MyCodeBlock">
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -86,7 +86,7 @@ version="3.1"&gt;
 &lt;/beans&gt;
 </pre>
 <p><b>HomeController.java</b></p>
-<pre>
+<pre class="MyCodeBlock">
 package com.code4devops;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

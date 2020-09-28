@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping(value="spring-mvc")
-public class SpringMVC {
+public class SpringMVCController {
 	@RequestMapping(value ="/spring-mvc-form-tag" , method=RequestMethod.GET)	
 	public String getSpringMvcFormTag() {
 	return "spring-mvc-form-tag";	

@@ -138,29 +138,29 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-@Entity
-@Table(name = "customer_detail")
+<b class="MySpecialWord">@Entity</b>
+<b class="MySpecialWord">@Table(name = "customer_detail")</b>
 public class Customer {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "customer_id", length = 10, nullable = false)
+	<b class="MySpecialWord">@Id</b>
+	<b class="MySpecialWord">@GeneratedValue(strategy = GenerationType.IDENTITY)</b>
+	<b class="MySpecialWord">@Column(name = "customer_id", length = 10, nullable = false)</b>
 	private int customer_id;
 	
-	@Column(name = "customer_fname", length = 45, nullable = true)
+	<b class="MySpecialWord">@Column(name = "customer_fname", length = 45, nullable = true)</b>
 	private String customer_fname;
 	
-	@Column(name = "customer_lname", length = 45, nullable = true)
+	<b class="MySpecialWord">@Column(name = "customer_lname", length = 45, nullable = true)</b>
 	private String customer_lname;
 	
-	@Column(name = "customer_mobile", length = 45, nullable = true)
+	<b class="MySpecialWord">@Column(name = "customer_mobile", length = 45, nullable = true)</b>
 	private String customer_mobile;
 	
-	@Column(name = "customer_email", length = 45, nullable = true)
+	<b class="MySpecialWord">@Column(name = "customer_email", length = 45, nullable = true)</b>
 	private String customer_email;
 	
-	@Column(name = "customer_join_date", length = 45, nullable = true)
-	@JsonFormat(pattern="yyyy-MM-dd")
+	<b class="MySpecialWord">@Column(name = "customer_join_date", length = 45, nullable = true)</b>
+	<b class="MySpecialWord">@JsonFormat(pattern="yyyy-MM-dd")</b>
     private Date customer_join_date; 
 	
 	public Customer() {}

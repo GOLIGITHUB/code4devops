@@ -18,7 +18,7 @@
   &lt;name&gt;spring-mvc-java-config-model-jstl-radiobutton-radiobuttons&lt;/name&gt;
   &lt;url&gt;http://maven.apache.org&lt;/url&gt;
   &lt;properties&gt;
-    &lt;springframework.version&gt;5.2.2.RELEASE&lt;/springframework.version&gt;
+    &lt;springframework.version&gt;5.2.8.RELEASE&lt;/springframework.version&gt;
     &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
     &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
   &lt;/properties&gt;

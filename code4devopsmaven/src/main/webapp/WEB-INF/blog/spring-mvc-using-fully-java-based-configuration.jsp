@@ -2,7 +2,7 @@
 <img src="${pageContext.request.contextPath}/static/img/blog/spring-mvc-using-fully-java-based-configuration.jpg" />
 <p><b>pom.xml</b></p>
 <p><strong>if you configure your spring mvc project using java soucre code frist setup pox.xml file</strong></p>
-<pre>
+<pre class="MyCodeBlock">
 &lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"&gt;
   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
@@ -46,7 +46,7 @@
 Here you can see web.xml file configration as SpringMvcDispatcherServletInitializer class 
 and your class must be extends AbstractAnnotationConfigDispatcherServletInitializer pre-define
 class</p>
-<pre>
+<pre class="MyCodeBlock">
 package com.code4devops;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 public class SpringMvcDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
@@ -73,7 +73,7 @@ public class SpringMvcDispatcherServletInitializer extends AbstractAnnotationCon
 Here you can see spring-mvc-dispatcher.xml file configration as ApplicationContextConfig class 
 and 
 </p>
-<pre>
+<pre class="MyCodeBlock">
 package com.code4devops;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -96,7 +96,7 @@ public class ApplicationContextConfig {
 }
 </pre>
 <p><b>MainController.java</b></p>
-<pre>
+<pre class="MyCodeBlock">
 package com.code4devops;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

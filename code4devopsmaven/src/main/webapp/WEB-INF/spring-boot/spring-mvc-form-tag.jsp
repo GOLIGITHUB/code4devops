@@ -19,7 +19,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 &lt;name&gt;spring-mvc-java-config-model Maven Webapp&lt;/name&gt;
 &lt;url&gt;http://maven.apache.org&lt;/url&gt;
 &lt;properties&gt;
-  &lt;springframework.version&gt;5.2.8.RELEASE;/springframework.version&gt;
+  &lt;springframework.version&gt;5.2.8.RELEASE&lt;/springframework.version&gt;
   &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
   &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
 &lt;/properties&gt;

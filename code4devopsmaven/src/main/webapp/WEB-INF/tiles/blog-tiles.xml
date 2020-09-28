@@ -38,7 +38,21 @@
         <put-attribute name="title" value="Python CRUD with Linux"/>  
         <put-attribute name="body"  value="/WEB-INF/blog/python-crud-operation-mariadb-in-linux.jsp"/>  
     </definition>
- 
-    
+    <definition name="hibernate-one-to-one-unidirectional-mapping-annotation-example" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Hibernate one to one Uni-Directional Mapping Annotation Example"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/hibernate-one-to-one-unidirectional-mapping-annotation-example.jsp"/>  
+    </definition>
+ 	<definition name="hibernate-one-to-one-bidirectional-mapping-annotation-example" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Hibernate one to one Bi-Directional Mapping Annotation Example"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/hibernate-one-to-one-bidirectional-mapping-annotation-example.jsp"/>  
+    </definition>
+    <definition name="hibernate-one-to-many-bidirectional-mapping-annotation-example" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Hibernate one to many Bi-Directional Mapping Annotation Example"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/hibernate-one-to-many-bidirectional-mapping-annotation-example.jsp"/>  
+    </definition>
+    <definition name="hibernate-lazy-loading-and-eager-loading-annotation-example" extends="baselayoutManagerBlog">  
+        <put-attribute name="title" value="Hibernate Lazy Loading and Eager Loading Annotation Example"/>  
+        <put-attribute name="body"  value="/WEB-INF/blog/hibernate-lazy-loading-and-eager-loading-annotation-example.jsp"/>  
+    </definition>
 </tiles-definitions>
 
